@@ -1,0 +1,21 @@
+[WebServer] (node:7423) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 1 worker
+
+(node:7455) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 tests/site.spec.ts:7:7 › en-GB: every route, internal link, metadata and no browser exceptions (2.4s)
+  ✓   2 tests/site.spec.ts:43:7 › en-GB: responsive screenshots, overflow and accessibility (15.7s)
+  ✓   3 tests/site.spec.ts:7:7 › de-DE: every route, internal link, metadata and no browser exceptions (2.2s)
+  ✓   4 tests/site.spec.ts:43:7 › de-DE: responsive screenshots, overflow and accessibility (16.1s)
+  ✓   5 tests/site.spec.ts:96:5 › desktop dropdown keyboard, Escape and outside click (668ms)
+  ✓   6 tests/site.spec.ts:116:5 › mobile menu closes, restores focus and navigates (638ms)
+  ✓   7 tests/site.spec.ts:135:5 › locale switch preserves route and plan selection (607ms)
+  ✓   8 tests/site.spec.ts:146:5 › walkthrough keyboard and FAQ operate; reduced motion honored (589ms)
+  ✓   9 tests/site.spec.ts:172:5 › unconfigured enquiries are honest and API rejects data (491ms)
+  ✓  10 tests/site.spec.ts:218:7 › demo: form validation and sandbox UI success/failure (1.0s)
+  ✓  11 tests/site.spec.ts:218:7 › contact: form validation and sandbox UI success/failure (974ms)
+  ✓  12 tests/site.spec.ts:260:5 › no unapproved customer routes, third-party trackers, or public placeholder media (486ms)
+
+  12 passed (43.6s)

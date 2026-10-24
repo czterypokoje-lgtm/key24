@@ -1,0 +1,48 @@
+{
+  "design_lock": {
+    "instruction": "Extend the current AXIOM-like homepage, do NOT replace it. Existing repository screenshots trump generic templates.",
+    "keep": [
+      "top nav proportions",
+      "editorial multiple-column hero",
+      "square buttons",
+      "blue accent",
+      "generous whitespace",
+      "grid lines/hairlines",
+      "existing animation library if suitable"
+    ],
+    "add": [
+      "real customer evidence masonry",
+      "multi-route product website",
+      "CRM product screenshot panels",
+      "playable product demo",
+      "pricing compare table",
+      "a11y menus and motion"
+    ]
+  },
+  "motion": {
+    "hover_ms": [
+      160,
+      260
+    ],
+    "entrance_ms": [
+      350,
+      650
+    ],
+    "stagger_ms": [
+      40,
+      75
+    ],
+    "respect_reduced_motion": true
+  },
+  "proof": {
+    "fake_content_prohibited": true
+  },
+  "fidelity": {
+    "baseline_required": true,
+    "compare_viewports": [
+      1440,
+      390
+    ],
+    "design_changes_need_before_after": true
+  }
+}

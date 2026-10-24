@@ -1,0 +1,33 @@
+name: KEY24 checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+      IBM_TELEMETRY_DISABLED: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: '.node-version'
+      - run: node .yarn/releases/yarn-3.5.1.cjs install --immutable
+      - run: node .yarn/releases/yarn-3.5.1.cjs playwright install --with-deps chromium
+      - run: node .yarn/releases/yarn-3.5.1.cjs typecheck
+      - run: node .yarn/releases/yarn-3.5.1.cjs lint
+      - run: node .yarn/releases/yarn-3.5.1.cjs test:unit
+      - run: node .yarn/releases/yarn-3.5.1.cjs build
+      - run: node .yarn/releases/yarn-3.5.1.cjs test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: key24-browser-evidence
+          path: |
+            docs/key24/evidence
+            playwright-report
+            test-results

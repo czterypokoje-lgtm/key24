@@ -1,0 +1,19 @@
+{
+  "publish": false,
+  "customer_name": null,
+  "business_name": null,
+  "business_website": null,
+  "country": null,
+  "role": null,
+  "review_text_approved": null,
+  "consent_for_name": false,
+  "consent_for_logo": false,
+  "consent_for_photo": false,
+  "consent_for_website_quote": false,
+  "consent_date": null,
+  "photo_path": null,
+  "logo_path": null,
+  "case_study_slug": null,
+  "metrics": [],
+  "note": "All published fields require source/permission. No fake metrics or photos."
+}

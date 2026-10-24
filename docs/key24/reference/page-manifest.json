@@ -1,0 +1,138 @@
+{
+  "root": "/{locale}",
+  "required_locales": [
+    "en-GB",
+    "de-DE"
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "path": "/",
+      "name": "Home",
+      "sections": "homepage hero, video, pain, journey, CRM, testimonials, pricing preview, CTA",
+      "conversion": "book_demo",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "agent",
+      "path": "/solutions/ai-call-agent",
+      "name": "AI Call Agent",
+      "sections": "features, what caller hears, handover, demo media, FAQ",
+      "conversion": "book_demo",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "crm",
+      "path": "/platform/crm",
+      "name": "Key24 CRM",
+      "sections": "pipeline, follow-up, screenshots, reporting, role-permissions if real",
+      "conversion": "book_demo",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "whatsapp",
+      "path": "/solutions/whatsapp",
+      "name": "WhatsApp Automation",
+      "sections": "consent-aware customer follow-up journeys, example messages",
+      "conversion": "book_demo",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "customers",
+      "path": "/customers",
+      "name": "Customer Stories",
+      "sections": "mixed-height masonry with only approved quotes and results",
+      "conversion": "book_demo",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "customer-story",
+      "path": "/customers/[slug]",
+      "name": "Case Study",
+      "sections": "only generated for verified permissioned record",
+      "conversion": "book_demo",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "pricing",
+      "path": "/pricing",
+      "name": "Pricing",
+      "sections": "3 plans, approved features, usage/caveat, FAQ",
+      "conversion": "book_demo",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "demo",
+      "path": "/demo",
+      "name": "See KEY24 in action",
+      "sections": "video or call sample; real booking/lead capture",
+      "conversion": "submit_lead",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "contact",
+      "path": "/contact",
+      "name": "Contact",
+      "sections": "working sales form, public email and legal business contact",
+      "conversion": "submit_contact",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "resources",
+      "path": "/resources",
+      "name": "Resources",
+      "sections": "real articles with functional links and FAQ",
+      "conversion": "book_demo",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "resources-detail",
+      "path": "/resources/[slug]",
+      "name": "Article",
+      "sections": "article-only if content exists",
+      "conversion": "book_demo",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "privacy",
+      "path": "/legal/privacy",
+      "name": "Privacy Policy",
+      "sections": "reviewed jurisdiction-appropriate policy",
+      "conversion": "none",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "terms",
+      "path": "/legal/terms",
+      "name": "Terms",
+      "sections": "reviewed commercial terms",
+      "conversion": "none",
+      "readiness": "requires_real_data_and_QA"
+    },
+    {
+      "id": "cookies",
+      "path": "/legal/cookies",
+      "name": "Cookies",
+      "sections": "reviewed cookies policy and consent details",
+      "conversion": "none",
+      "readiness": "requires_real_data_and_QA"
+    }
+  ],
+  "nav": {
+    "solutions": [
+      "agent",
+      "whatsapp"
+    ],
+    "platform": [
+      "crm"
+    ],
+    "main": [
+      "customers",
+      "pricing",
+      "resources"
+    ],
+    "cta": "demo"
+  },
+  "customer_case_study_generation": "only approved validated records",
+  "block_dead_routes": true
+}

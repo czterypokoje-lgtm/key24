@@ -1,0 +1,44 @@
+{
+  "name": "key24",
+  "version": "2.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "yarn@3.5.1",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint pages components content lib tests --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "test:unit": "tsx --test tests/unit.test.ts"
+  },
+  "dependencies": {
+    "@carbon/colors": "11.61.0",
+    "@fontsource/ibm-plex-mono": "^5.2.0",
+    "@fontsource/ibm-plex-sans": "^5.2.0",
+    "next": "15.5.28",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "8.57.1",
+    "eslint-config-next": "15.5.28",
+    "lighthouse": "^13.5.0",
+    "prettier": "^3.9.10",
+    "sass": "^1.100.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3"
+  },
+  "resolutions": {
+    "postcss": "^8.5.23"
+  }
+}

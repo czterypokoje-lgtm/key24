@@ -1,0 +1,11 @@
+➤ YN0000: ┌ Resolution step
+➤ YN0060: │ @sentry/node@npm:10.76.2 provides @opentelemetry/api (p8a2b6) with version 1.10.0, which doesn't satisfy what @opentelemetry/sdk-trace-base and some of its descendants request
+➤ YN0002: │ @sentry/node@npm:10.76.2 doesn't provide @opentelemetry/core (p7dbcd), requested by @sentry/opentelemetry
+➤ YN0002: │ key24@workspace:. doesn't provide playwright-core (pc07e0), requested by @axe-core/playwright
+➤ YN0000: │ Some peer dependencies are incorrectly met; run yarn explain peer-requirements <hash> for details, where <hash> is the six-letter p-prefixed code
+➤ YN0000: └ Completed
+➤ YN0000: ┌ Fetch step
+➤ YN0000: └ Completed in 0s 420ms
+➤ YN0000: ┌ Link step
+➤ YN0000: └ Completed in 0s 213ms
+➤ YN0000: Done with warnings in 0s 886ms

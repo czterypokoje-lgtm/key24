@@ -1,0 +1,48 @@
+{
+  "productionBuild": "passed",
+  "typecheck": "passed",
+  "lint": "passed without warnings",
+  "unitTests": {
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browserTests": {
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0
+  },
+  "routes": 28,
+  "responsiveWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "screenshots": 69,
+  "lighthouse": {
+    "mobile": {
+      "performance": 98,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    },
+    "desktop": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 63
+    }
+  },
+  "vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0
+  },
+  "crmStaging": "blocked; endpoint/schema/credentials not supplied",
+  "productionReady": false
+}

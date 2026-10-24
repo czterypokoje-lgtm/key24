@@ -1,0 +1,17 @@
+✔ server validation rejects invalid input, excessive data and missing consent (1.819316ms)
+✔ proof publication requires every permission and evidence field (1.553008ms)
+✔ privacy gates remain closed without actual reviewed text (0.252067ms)
+✔ route mapping is complete and unapproved slugs are not mapped (0.471653ms)
+✔ CRM requires HTTPS and both configured bindings (0.335075ms)
+✔ adapter makes a real local HTTP request and validates upstream acknowledgement (126.036424ms)
+✔ adapter does not treat arbitrary 2xx, rejection, timeout or redirect as success (5.298048ms)
+✔ API delivers once for a repeated key, rejects conflicts and keeps private data out of responses (47.663435ms)
+✔ API rate-limits repeated requests without trusting forwarded IP headers (1.505135ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 704.09098
