@@ -11,14 +11,14 @@ import {
 } from "../content/site";
 import { articles } from "../content/articles";
 import { legal } from "../content/legal";
-import { demoMedia } from "../content/media";
+import { ProductShowcase } from "./ProductShowcase";
+import { DemoFilm, HumanSection, ProductTrust } from "./ConfidenceSections";
 import type { PublicCustomerProof } from "../content/proof";
 import { Header, Footer, FinalCTA, Icon } from "./Shell";
 import {
   Hero,
   Journey,
   Features,
-  CRMPanel,
   Proof,
   Pricing,
   FAQ,
@@ -74,7 +74,7 @@ export function SitePage({
   return (
     <>
       <Head>
-        <title>{title} | KEY24</title>
+        <title>{`${title} | KEY24`}</title>
         <meta name="description" content={description} />
         <meta
           name="robots"
@@ -130,13 +130,16 @@ export function SitePage({
                 <Icon />
               </Link>
             </div>
+            <DemoFilm locale={locale} />
             <Features
               locale={locale}
               title={pages[locale].home.sectionTitle}
               features={pages[locale].home.features}
             />
             <Journey locale={locale} />
-            <CRMPanel locale={locale} />
+            <ProductShowcase locale={locale} />
+            <ProductTrust locale={locale} />
+            <HumanSection locale={locale} />
             <ProductLinks locale={locale} />
             <Proof locale={locale} records={proof} />
             <Pricing locale={locale} />
@@ -152,7 +155,7 @@ export function SitePage({
               features={pages[locale][id].features}
             />
             {id === "crm" ? (
-              <CRMPanel locale={locale} />
+              <ProductShowcase locale={locale} />
             ) : (
               <Journey locale={locale} interactive />
             )}
@@ -237,39 +240,7 @@ export function SitePage({
         {id === "demo" && (
           <>
             <Hero locale={locale} id="demo" />
-            {demoMedia?.approved ? (
-              <section className="section media">
-                <h2>{t.videoMissing}</h2>
-                <video
-                  controls
-                  preload="metadata"
-                  poster={demoMedia.poster}
-                  width="1280"
-                  height="720"
-                >
-                  <source src={demoMedia.src} type="video/mp4" />
-                  <track
-                    kind="captions"
-                    src={demoMedia.captions[locale]}
-                    srcLang={locale}
-                    label={locale}
-                    default
-                  />
-                </video>
-                <details>
-                  <summary>
-                    {locale === "de-DE" ? "Transkript" : "Transcript"}
-                  </summary>
-                  <p>{demoMedia.transcript[locale]}</p>
-                </details>
-              </section>
-            ) : (
-              <section className="section demo-intro">
-                <span className="eyebrow">{t.workflow}</span>
-                <h2>{t.videoMissing}</h2>
-                <p>{t.videoText}</p>
-              </section>
-            )}
+            <DemoFilm locale={locale} />
             <Journey locale={locale} interactive />
             <LeadForm
               key={locale}

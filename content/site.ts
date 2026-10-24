@@ -397,10 +397,10 @@ export const pages: Record<
     },
     crm: {
       eyebrow: "PLATFORM / KEY24 CRM",
-      title: "Every enquiry.\nA little more clarity.",
+      title: "Calls. Jobs. Stock.\nOne working view.",
       intro:
-        "The KEY24 workspace is designed to connect calls, enquiry details and the next action in one considered workflow.",
-      sectionTitle: "From first contact\nto an informed decision.",
+        "Your agenda, mobile team, stock, conversations and invoices in one workspace, built for automotive locksmiths.",
+      sectionTitle: "From the first call\nto the parts in your van.",
       features: [
         {
           title: "A structured enquiry",
@@ -520,10 +520,10 @@ export const pages: Record<
     },
     crm: {
       eyebrow: "PLATTFORM / KEY24 CRM",
-      title: "Jede Anfrage.\nEtwas mehr Klarheit.",
+      title: "Anrufe. Aufträge. Bestand.\nEin gemeinsamer Überblick.",
       intro:
-        "Der KEY24-Arbeitsbereich soll Anrufe, Anfragedetails und nächste Schritte in einem durchdachten Ablauf verbinden.",
-      sectionTitle: "Vom ersten Kontakt\nzur fundierten Entscheidung.",
+        "Agenda, mobiles Team, Bestand, Gespräche und Rechnungen in einem Arbeitsbereich für Fahrzeugschlüsseldienste.",
+      sectionTitle: "Vom ersten Anruf\nbis zu den Teilen im Fahrzeug.",
       features: [
         {
           title: "Eine strukturierte Anfrage",

@@ -16,7 +16,7 @@ Upstream desktop/tablet/mobile baseline screenshots exist. No customized AXIOM s
 - Three-part editorial hero, technical call diagram, workflow walkthrough, illustrative CRM panel, product sections, mixed-height editorial proof/scenario cards, pricing comparison and FAQs. Square controls, Carbon colors, Plex type and blue/white/neutral design.
 - Typed content, localized metadata and document language, canonical/hreflang/sitemap support gated by the real domain and public indexing setting, privacy-safe defaults and no third-party tracking or embeds.
 - Lead adapter and server route: validation, same-origin check, honeypot, process-local throttling, bounded deduplication, upstream idempotency key, timeouts, redirect rejection and explicit acknowledgement. Accessible form validation, failure/retry and accurate delivery confirmation states. Forms remain unavailable with missing configuration/privacy approval.
-- Runtime updated from Next 12/React 17 to Next 15.5.28/React 18.3.1. Removed unused legacy IBM shell/tooling and metadata. Kept Carbon palette via current color tokens and local fonts. Refreshed compatible dependency ranges and patched PostCSS resolution; checksums/TLS verification retained. CI workflow added, but has not run on GitHub.
+- Runtime updated from Next 12/React 17 to Next 15.5.28/React 18.3.1. Removed unused legacy IBM shell/tooling and metadata. Kept Carbon palette via current color tokens and local fonts. Refreshed compatible dependency ranges and patched PostCSS resolution; checksums/TLS verification retained. CI workflow added; GitHub execution has not been checked from this chat.
 
 ## Verified in this cloud machine
 
@@ -28,7 +28,7 @@ Upstream desktop/tablet/mobile baseline screenshots exist. No customized AXIOM s
 | Formatting | Passed |
 | Production build | Passed; 28 localized page routes generated |
 | Unit/adapter/handler tests | 9 passed, 0 failed, 0 skipped |
-| Chromium/Playwright | 12 passed, 0 failed, 0 skipped |
+| Chromium/Playwright | 16 passed, 0 failed, 0 skipped |
 | Routes and links | All generated routes and discovered internal links return 200; unknown paths return 404 |
 | Responsive | Home at 320/390/768/1024/1280/1440; all other routes at 320/1440; no horizontal overflow |
 | Axe accessibility | Zero detected violations across tested pages at desktop and home at mobile, WCAG A/AA tags |
@@ -37,7 +37,7 @@ Upstream desktop/tablet/mobile baseline screenshots exist. No customized AXIOM s
 | Customer proof | Permission/evidence/photo/story gates tested; no dummy customer data published |
 | Client privacy | Token binding name and internal release/consent fields absent from static JS; no third-party page requests observed in the customer-page test |
 | Dependency audit | Zero known advisories in final recursive audit |
-| Browser screenshots | 69 PNGs: 3 upstream baseline, 64 responsive route captures, 2 hero captures |
+| Browser screenshots | 78 PNGs, including upstream baseline, current responsive routes and before/after product sections; plus 12 public WebP product exports |
 
 The first browser run caught small-text contrast defects, corrected with darker Carbon blue on pale surfaces. A mobile test locator was corrected to follow the menu button's accessible-name change. Final passing reports supersede earlier failed-run output.
 
@@ -45,17 +45,23 @@ The first browser run caught small-text contrast defects, corrected with darker 
 
 | Profile | Performance | Accessibility | Best practices | SEO |
 | --- | --- | --- | --- | --- |
-| Mobile | 98 | 100 | 100 | 63 |
-| Desktop | 100 | 100 | 100 | 63 |
+| Mobile | 98 | 100 | 100 | 66 |
+| Desktop | 100 | 100 | 100 | 66 |
 
-The SEO score reflects intentional `noindex`/robots blocking before launch, not a passing public SEO release. Mobile LCP 2.3s, TBT 60ms and CLS 0.001 in this run. Local Lighthouse/axe results are lab evidence, not field-performance guarantees or a complete manual accessibility certification. See the HTML/JSON reports in `evidence/`.
+The SEO score reflects intentional `noindex`/robots blocking before launch, not a passing public SEO release. Mobile LCP 2.3s, TBT 50ms and CLS 0.001 in this run. Local Lighthouse/axe results are lab evidence, not field-performance guarantees or a complete manual accessibility certification. See the HTML/JSON reports in `evidence/`.
+
+## Product presentation update
+
+The owner supplied CRM views for agenda, technicians, stock and invoices, confirmed there are no certifications to display, and specified click-fraud management as a customizable extra-cost add-on. The new homepage and CRM showcase present six modules with clean demonstration data; raw screenshots and private records are not published. The conversation layout is illustrative, and the click-fraud view is a separately quoted concept with no blocking/savings promises.
+
+The homepage/demo section is prepared for the planned 1:25 film, with honest pending-media status and a working product link. The human scene is clearly labelled AI-generated, not a real employee/customer portrait or endorsement. The trust area demonstrates workflows rather than inventing certification badges. See [PRODUCT_SHOWCASE.md](PRODUCT_SHOWCASE.md) for asset provenance, export commands and video handoff.
 
 ## Outstanding launch blockers
 
 1. **Real CRM integration:** supply the staging HTTPS endpoint, schema, authentication and idempotency contract. Enter credentials securely, then verify an actual record in staging. The current contract is explicitly proposed; see [CRM_INTEGRATION.md](CRM_INTEGRATION.md). Process-local throttling requires a trusted edge/durable deployment strategy for multi-instance production.
 2. **Legal and contact identity:** supply reviewed EN/DE privacy, terms and cookie text, company identity and a public business contact. Legal routes currently explain the missing publication; they are not completed legal policies. Privacy approval must include actual text before a locale's form enables.
 3. **Customer evidence:** approved exact quotes, identity/photo/logo permissions, case-story approval and measured result evidence. There are currently no live testimonials or real case-study pages. Editorial workflow scenarios are clearly labelled.
-4. **Media and CRM screenshots:** approved recording, captions/transcript and sanitized real product captures. The interactive demo and CRM view are illustrative; no playable video or real product screenshot is claimed.
+4. **Media and CRM screenshots:** approved recording, captions/transcript and any approved real team/customer photographs. The new presentation views are recreated from supplied CRM workflows using demonstration data; no raw customer/technician screenshots or playable video are claimed.
 5. **Commercial/product approval:** confirm proposed prices, tier entitlements, usage/overage/setup fees, cancellation/support/tax details and actual supported integration capabilities. No checkout, invented allowances or performance promises are published.
 6. **Launch configuration:** actual public HTTPS origin, verified deployment/rollback and public indexing approval. Rebuild with `KEY24_SITE_URL` and `KEY24_PUBLIC_INDEXING=1` only after release gates pass. Real booking needs an approved scheduler integration if appointment confirmation is required.
 7. **Final owner review:** compare against the actual intended design references and review English/German product copy with the real operational team. The missing original screenshots prevent exact fidelity validation.

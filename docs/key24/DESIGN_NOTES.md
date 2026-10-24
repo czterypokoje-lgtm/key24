@@ -24,3 +24,7 @@ Browser evidence covers all routes in EN/DE at 320/1440, with home captures at 3
 ## Intentional publication gates
 
 No playable media is shown without an approved asset. No customer case-study route exists without separately approved story content. Pricing is visibly proposed and has no invented allowances. Legal routes disclose that approved texts are missing; enquiry submission stays unavailable. No trackers, analytics events, third-party embeds or nonessential storage are loaded. There is no fake appointment confirmation or fake cookie-consent interaction.
+
+## CRM and human-story extension
+
+The owner later supplied actual CRM screenshots. New product presentation views reflect its navy/orange UI, within the existing blue/white website. All personal details were replaced through fresh reconstruction, not published redactions. Full-size English/German exports are available for all six modules; the optional click-fraud concept is explicitly custom-scoped at extra cost. A new film section and clearly labelled generated workshop scene add context without pretending to be customer proof. No certification badges appear, per the owner's confirmation. See PRODUCT_SHOWCASE.md.

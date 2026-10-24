@@ -4,7 +4,7 @@
 
    Linting and checking validity of types ...
    Creating an optimized production build ...
- ✓ Compiled successfully in 2.4s
+ ✓ Compiled successfully in 2.1s
    Collecting page data ...
    Generating static pages (0/30) ...
    Generating static pages (7/30) 
@@ -17,7 +17,7 @@
 Route (pages)                                Size  First Load JS
 ┌ ƒ /                                       239 B        82.6 kB
 ├   /_app                                     0 B        82.3 kB
-├ ● /[locale]/[[...slug]] (1846 ms)       22.3 kB         107 kB
+├ ● /[locale]/[[...slug]] (1460 ms)         29 kB         114 kB
 ├   ├ /en-GB
 ├   ├ /en-GB/solutions/ai-call-agent
 ├   ├ /en-GB/platform/crm
@@ -26,10 +26,11 @@ Route (pages)                                Size  First Load JS
 ├ ƒ /api/leads                                0 B        82.3 kB
 ├ ƒ /robots.txt                             245 B        82.6 kB
 └ ƒ /sitemap.xml                            247 B        82.6 kB
-+ First Load JS shared by all             89.9 kB
++ First Load JS shared by all             93.5 kB
   ├ chunks/framework-a6e0b7e30f98059a.js  44.8 kB
   ├ chunks/main-3a4aee06071d7ea5.js       36.4 kB
-  └ other shared chunks (total)           8.76 kB
+  ├ css/548982a82d81c63f.css              11.2 kB
+  └ other shared chunks (total)           1.19 kB
 
 ○  (Static)   prerendered as static content
 ●  (SSG)      prerendered as static HTML (uses getStaticProps)

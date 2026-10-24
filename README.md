@@ -43,6 +43,12 @@ Browser tests start the production build, so build first. Do not run development
 - Copy `.env.example` to a local ignored `.env.local` only if needed. Credentials belong in secure environment settings. The app reads server bindings; tokens never enter `NEXT_PUBLIC_*` variables or client page props.
 - Set the real `KEY24_SITE_URL` and `KEY24_PUBLIC_INDEXING=1` only after release approval. Until then robots disallows indexing; static pages are noindex. Rebuild after changes to these build-time settings. Never deploy an invented canonical domain.
 
+## Product visuals and the homepage film
+
+The homepage and CRM page now show six privacy-safe product views: agenda, stock, conversations, team, invoices and an optional click-fraud add-on. The add-on is custom-scoped and costs extra. Full-size EN/DE images live in `public/product/`. The raw screenshots and real technician/customer details are not published.
+
+The homepage/demo film section is prepared for the planned 1:25 recording; no video is claimed to be playable yet. The human workshop visual is explicitly labelled AI-generated, not a real customer or team portrait. There are no fabricated certification badges. See [asset provenance and video handoff](docs/key24/PRODUCT_SHOWCASE.md).
+
 ## Current limits
 
 This is a reviewable implementation, not a production-ready release. Real CRM staging acceptance, approved customer proof/media/legal text, business contact details, final pricing and product-capability verification remain external prerequisites. Browser API fixtures and a local adapter server are test evidence only, not evidence of delivery to a real CRM. Publishing source to GitHub does not deploy the website. No website deployment or environment publication has been verified.

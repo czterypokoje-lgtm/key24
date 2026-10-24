@@ -435,7 +435,12 @@ export function Pricing({
           </article>
         ))}
       </div>
-      <p className="pricing-note">{t.pricingNote}</p>
+      <p className="pricing-note">
+        {t.pricingNote}{" "}
+        {locale === "de-DE"
+          ? "Individuelle Klickbetrug-Konfiguration wird separat angeboten und zusätzlich berechnet."
+          : "Custom click-fraud configuration is quoted separately, at extra cost."}
+      </p>
       {full && (
         <div className="comparison">
           <h3>{t.compare}</h3>
